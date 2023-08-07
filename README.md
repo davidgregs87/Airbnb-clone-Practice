@@ -53,45 +53,7 @@ A command interpreter is a customized console design by me to manipulate our pyt
 * All your classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
 * All your functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__***8*("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
 * A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+  
 
+![815046647d23428a14ca](https://github.com/davidgregs87/Airbnb-clone-Practice/assets/108700012/f1b73d02-cc59-4f4d-bad9-554741896fc1)
 
-# More Info
-
-## Execution
-Shell should work like this in interactive mode:
-
-$ ./console.py
-(hbnb) help
-
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit
-
-(hbnb) 
-(hbnb) 
-(hbnb) quit
-$
-
-But also in non-interactive mode:
-
-$ echo "help" | ./console.py
-(hbnb)
-
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit
-(hbnb) 
-$
-$ cat test_help
-help
-$
-$ cat test_help | ./console.py
-(hbnb)
-
-Documented commands (type help <topic>):
-========================================
-EOF  help  quit
-(hbnb) 
-$
-
-![Alt text](image.png)
