@@ -1,0 +1,84 @@
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.tiny {
+    display: block;
+    width: 300px;
+    border: 1px solid #ff5a5f;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+
+.home {
+    display: block
+    width: 350px;
+    border: 1px solid #ff5a5f;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 4px;
+    margin-right: 60px;
+}
+
+.suite {
+    flex: 0 0 calc(33.33% - 40px);
+    border: 1px solid #ff5a5f;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.text-home {
+   margin-top: 20px;
+   margin-left: 30%;
+}
+
+.dollar {
+    border: 2px solid #ff5a5f;
+    padding-top: 20px;
+    margin-top: 3px;
+    width: 18%;
+    color: #ff5a5f;
+    border-radius: 32px;
+    height: 35px;
+}
+
+.dollar1 {
+    border: 2px solid #ff5a5f;
+    padding-top: 20px;
+    margin-top: 3px;
+    width: 18%;
+    color: #ff5a5f;
+    border-radius: 32px;
+    height: 35px;
+}
+
+.text-tiny {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+
+.dollar2 {
+    border: 2px solid #ff5a5f;
+    padding-top: 20px;
+    margin-top: 3px;
+    width: 18%;
+    color: #ff5a5f;
+    border-radius: 32px;
+    height: 35px;
+}
+
+.text-suite {
+    margin-top: 20px;
+    margin-left: 30%;
+}
+

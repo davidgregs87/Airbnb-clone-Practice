@@ -1,0 +1,40 @@
+.places {
+    max-height: 300px;
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-weight: 600;
+    font-size: 20px;
+}
+.tiny {
+    width: 300px;
+    border: 1px solid #ff5a5f;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 4px;
+    height: 50px;
+    margin-right: 60px;
+}
+.home {
+    width: 300px;
+    border: 1px solid #ff5a5f;
+    margin-top: 35px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 4px;
+    height: 50px;
+    margin-right: 60px;
+}
+.suite {
+    flex: 0 0 calc(43.33% - 40px);
+    border: 1px solid #ff5a5f;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+
