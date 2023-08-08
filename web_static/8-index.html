@@ -8,115 +8,278 @@
     <link rel="stylesheet" href="styles/4-common.css">
     <link rel="stylesheet" href="styles/6-filters.css">
     <link rel="stylesheet" href="styles/8-places.css">
+    <link rel="font" href="../web_static/styles/Oswald/static/Oswald-Light.ttf">
     <link rel="icon" href="images/icon.png">
   </head>
   <body>
     <header></header>
     <div class="container">
-      <div class="filters">
+      <div class="filters clearfix">
         <div class="btn">
           <button>Search</button>
           <div class="amenities">
             <h3>Amenities</h3>
             <h4>Internet, Kitchen...</h4>
+            <ul class="popover">
+              <li>Tv</li>
+              <li>Wifi</li>
+              <li>Medicals</li>
+              <li>Pool</li>
+              <li>Internet</li>
+              <li>Air Conditioning</li>
+              <li>Pet</li>
+              <li>Outdoor barbecue grill</li>
+              <li>Washer and Dryer</li>
+              <li>Fireplace</li>
+            </ul>
           </div>
-          <ul class="popover">
-            <li>Tv</li>
-            <li>Wifi</li>
-            <li>Medicals</li>
-            <li>Pool</li>
-          </ul>
           <div class="locations">
             <h3>States</h3>
             <h4>Detroit, Texas...</h4>
+            <ul class="popover font">
+              <h2>California</h2>
+              <ul>
+                <li>Detroit</li>
+                <li>Miami</li>
+              </ul>
+              <h2>Florida</h2>
+              <ul>
+                <li>North Carolina</li>
+                <li>Chicago</li>
+              </ul>
+            </ul>
           </div>
-          <ul class="popover">
-            <h2>California</h2>
-            <ul>
-              <li>Detriot</li>
-              <li>Miami</li>
-            </ul>
-            <h2>Florida</h2>
-            <ul>
-              <li>North Carolina</li>
-              <li>Chicago</li>
-            </ul>
-          </ul>
         </div>
       </div>
+      <h1 class="text-place">Places</h1>
       <div class="places container">
-        <h1>Places</h1>
-        <div class="home ">
-          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #dddddd; width: 300px; height: 65px; margin-top: -18px;">
-            <p class="text-home">My home</p>
-            <p class="dollar">$80</p>
+        <div class="home">
+          <div class="home-top">
+            <div class="home-text">
+              <p>My Home</p>
+            </div>
+            <div class="dollar">
+              <p>$80</p>
+            </div>
           </div>
-          <div style="display: flex; justify-content: space-around; width: 300px; height: 65px; margin-top: 5px; flex-wrap: wrap; font-size: 15px; font-weight: 100;">
-            <img src="../web_static/images/icon_bath.png" alt="" style= "width: 24%; height: 50px;">
-            <img src="../web_static/images/icon_bed.png" alt="" style="width: 24%; height: 50px;" >
-            <img src="../web_static/images/icon_group.png" alt="" style="width: 24%; height: 50px;">
-            <p>2 Bathrooms</p>
-            <p>1 Bedroom</p>
-            <p>2 Guests</p>
+          <div class="img_style">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
           </div>
-          <div style="border-top: 1px solid #dddddd; display: block; padding-top: 5px; flex-wrap: wrap; width: 300px;height: 170px; font-size: 15px; font-weight: 100;">
-            <p><strong style="font-weight: 600;">Owner:</strong> Julien Bieber</p>
-            <p><strong style="font-weight: 600;">Description:</strong>Located in a serene and upscale neighborhood,
-              this well-furnished house is a perfect blend of elegance and comfort.
-              Situated in the suburbs, it offers a peaceful retreat
-              from the hustle and bustle of the city, while still providing easy
-              access to amenities and services. Located in Hollywood, Come and make it your home!</p>
+          <div class="info">
+            <p class="space">2 Bedrooms</p>
+            <p class="space">2 Bathrooms</p>
+            <p class="space">3 Guests</p>
+          </div>
+          <div class="owner">
+            <p><strong>Owner:</strong> Thomas Shelby</p>
+          </div>
+          <div class="description"></div>
+            <p style="margin-left: 3px;"><strong>Description</strong></p>
+            <p class="describe"><i style="line-height: 1rem; margin-left: 3px;">Escape to our charming cabin nestled deep within the tranquil woods for an unforgettable getaway. Perfect for nature
+          enthusiasts and those seeking a peaceful retreat, our cozy cabin offers a unique blend of rustic charm and modern
+          comfort.
+        
+          This two-bedroom cabin boasts a warm and inviting atmosphere, complete with a crackling fireplace and large windows that
+          frame picturesque views of the surrounding forest. The open-concept living area is tastefully furnished with a plush
+          sofa, antique wooden furnishings, and curated decor that adds to the cabin's charm.
+        
+          The fully-equipped kitchen provides all the essentials for preparing your favorite meals, while the dining area is a
+          perfect spot to enjoy them while basking in the natural light.</i></p>
+          <div class="amen">
+            <p><strong style="font-size: 1rem;">Amenities</strong></p>
+            <div class="img4"></div>
+            <p class="tv">TV</p>
+            <div class="img5"></div>
+            <p class="wifi">Free Wifi</p>
+            <div class="img6"></div>
+            <p class="Pet">Pet</p>
+          </div>
+          <div class="reviews">
+            <p><strong style="font-size: 1rem; margin-left: 5px;">2 Reviews</strong></p>
+          </div>
+          <div class="rev-msg">
+            <p><strong>From Dylan Jobbs on 27th July 2014</strong></p>
+            <p class="msg"><em>Such a very nice place to be, i wish i could stay much longer</em></p>
+            <p><strong style="line-height: 2rem;">From Halle Hayes on 11th December 2012</strong></p>
+            <p class="msg">This place is highly recommendable!</p>
           </div>
         </div>
-        <div class="tiny">
-          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #dddddd; width: 300px; height: 65px; margin-top: -18px;">
-            <p class="text-tiny">Tiny house</p>
-            <p class="dollar1">$60</p>
+        <div class="home">
+          <div class="home-top">
+            <div class="home-text">
+              <p>Tiny House</p>
+            </div>
+            <div class="dollar">
+              <p>$60</p>
+            </div>
           </div>
-          <div
-            style="display: flex; justify-content: space-around; width: 300px; height: 65px; margin-top: 5px; flex-wrap: wrap; font-size: 15px; font-weight: 100;">
-            <img src="../web_static/images/icon_bath.png" alt="" style="width: 24%; height: 50px;">
-            <img src="../web_static/images/icon_bed.png" alt="" style="width: 24%; height: 50px;">
-            <img src="../web_static/images/icon_group.png" alt="" style="width: 24%; height: 50px;">
-            <p>1 Bathrooms</p>
-            <p>1 Bedroom</p>
-            <p>1 Guests</p>
+          <div class="img_style">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
           </div>
-          <div style="border-top: 1px solid #dddddd; display: block; padding-top: 5px; flex-wrap: wrap; width: 300px;height: 170px; font-size: 15px; font-weight: 100;">
-            <p><strong style="font-weight: 600;">Owner:</strong> David Gregs</p>
-            <p><strong style="font-weight: 600;">Description:</strong>Situated in a peaceful and upscale area,
-            this very much outfitted house is an ideal mix of style and solace. Arranged in
-            suburbia, it offers a serene retreat from the buzzing
-            about of the city, while as yet giving simple admittance to
-            conveniences, administrations, easy access to other social amenities and so much more!</p>
+          <div class="info">
+            <p class="space">1 Bedrooms</p>
+            <p class="space">1 Bathrooms</p>
+            <p class="space">2 Guests</p>
+          </div>
+          <div class="owner">
+            <p><strong>Owner:</strong> Mason Phil</p>
+          </div>
+          <div class="description"></div>
+            <p style="margin-left: 3px;"><strong>Description</strong></p>
+            <p class="describe"><i style="line-height: 1rem; margin-left: 3px;">Explore our charming cabin nestled deep within the
+            tranquil woods for an unforgettable getaway. Perfect for nature
+            enthusiasts and those seeking a peaceful retreat, our cozy cabin offers a unique blend of rustic charm and modern
+            comfort.
+          
+            This one-bedroom cabin boasts a warm and inviting atmosphere, complete with a crackling fireplace and large windows
+            that
+            frame picturesque views of the surrounding forest. The open-concept living area is tastefully furnished with a plush
+            sofa, antique wooden furnishings, and curated decor that adds to the cabin's charm.
+          
+            The fully-equipped kitchen provides all the essentials for preparing your favorite meals, while the dining area is a
+            perfect spot to enjoy them while basking in the natural light.</i></p>
+          <div class="amen">
+            <p><strong style="font-size: 1rem;">Amenities</strong></p>
+            <div class="img4"></div>
+            <p class="tv">TV</p>
+            <div class="img5"></div>
+            <p class="wifi">Free Wifi</p>
+            <div class="img6"></div>
+            <p class="Pet">Pet</p>
+          </div>
+          <div class="reviews">
+            <p><strong style="font-size: 1rem; margin-left: 5px;">1 Review</strong></p>
+          </div>
+          <div class="rev-msg">
+            <p><strong>From Emily Ian on 11th May 2016</strong></p>
+            <p class="msg"><em>Such a very nice place to be, i wish i could stay much longer,
+              I love the mountain view the, the fireplace, that special feeling when you're
+              get everything is exactly what i felt, It Just felt like another home. Kudos!
+            </em></p>
           </div>
         </div>
-        <div class="suite">
-          <div style="display: flex; justify-content: space-between; border-bottom: 1px solid #dddddd; width: 300px; height: 65px; margin-top: -8px;">
-            <p class="text-suite">A suite</p>
-            <p class="dollar2">$130</p>
+        <div class="home">
+          <div class="home-top">
+            <div class="home-text">
+              <p>Suite</p>
+            </div>
+            <div class="dollar">
+              <p>$120</p>
+            </div>  
           </div>
-          <div
-            style="display: flex; justify-content: space-around; width: 300px; height: 65px; margin-top: 5px; flex-wrap: wrap; font-size: 15px; font-weight: 100;">
-            <img src="../web_static/images/icon_bath.png" alt="" style="width: 24%; height: 50px;">
-            <img src="../web_static/images/icon_bed.png" alt="" style="width: 24%; height: 50px;">
-            <img src="../web_static/images/icon_group.png" alt="" style="width: 24%; height: 50px;">
-            <p>2 Bathrooms</p>
-            <p>2 Bedroom</p>
-            <p>3 Guests</p>
+          <div class="img_style">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
           </div>
-          <div style="border-top: 1px solid #dddddd; display: block; padding-top: 5px; flex-wrap: wrap; width: 300px;height: 170px; font-size: 15px; font-weight: 100;">
-            <p><strong style="font-weight: 600;">Owner:</strong> Guilaime Salva</p>
-            <p><strong style="font-weight: 600;">Description:</strong>Situated in a quiet and urban area,
-            this very much outfitted house is an ideal mix of polish and solace. Arranged in
-            suburbia, it offers a quiet retreat from the hurrying around of the city, while as yet
-            giving simple admittance to
-            conveniences and administrations.</p>
+          <div class="info">
+            <p class="space">3 Bedrooms</p>
+            <p class="space">3 Bathrooms</p>
+            <p class="space">4 Guests</p>
+          </div>
+          <div class="owner">
+            <p><strong>Owner:</strong> Billy Timber</p>
+          </div>
+          <div class="description"></div>
+            <p style="margin-left: 3px;"><strong>Description</strong></p>
+            <p class="describe"><i style="line-height: 1rem; margin-left: 3px;">Come to our beautiful cabin nestled deep within the
+            tranquil woods for an unregretable getaway. Perfect for nature
+            enthusiasts and those looking for a peaceful retreat, our cozy cabin offers a unique blend of rustic charm and modern
+            comfort.
+          
+            This three-bedroom cabin boasts a warm and inviting atmosphere, complete with a crackling fireplace and large windows
+            that
+            frame picturesque views of the surrounding forest. The open-concept living area is tastefully furnished with a plush
+            sofa, antique wooden furnishings, and curated decor that adds to the cabin's charm.
+          
+            The fully-equipped kitchen provides all the essentials for preparing your favorite meals, while the dining area is a
+            perfect spot to enjoy them while basking in the natural light.</i></p>
+          <div class="amen">
+            <p><strong style="font-size: 1rem;">Amenities</strong></p>
+            <div class="img4"></div>
+            <p class="tv">3 TV's</p>
+            <div class="img5"></div>
+            <p class="wifi">Free Wifi</p>
+            <div class="img6"></div>
+            <p class="Pet">Pet</p>
+          </div>
+          <div class="reviews">
+            <p><strong style="font-size: 1rem; margin-left: 5px;">1 Review</strong></p>
+          </div>
+          <div class="rev-msg">
+            <p><strong>From Freddie Thorne on 11th May 2016</strong></p>
+            <p class="msg"><em>Absolutely fantastic place, i have no regrets at all and i wish i could stay much longer,
+                I love the kitchen, the fireplace, that special feeling when you're
+                get everything is exactly what i felt, It Just felt like another home. Nice one!
+              </em></p>
+          </div>
+        </div>
+        <div class="home">
+          <div class="home-top">
+            <div class="home-text">
+              <p>Luxury</p>
+            </div>
+            <div class="dollar">
+              <p>$200</p>
+            </div>
+          </div>
+          <div class="img_style">
+            <div class="img1"></div>
+            <div class="img2"></div>
+            <div class="img3"></div>
+          </div>
+          <div class="info">
+            <p class="space">5 Bedrooms</p>
+            <p class="space">4 Bathrooms</p>
+            <p class="space">6 Guests</p>
+          </div>
+          <div class="owner">
+            <p><strong>Owner:</strong> Roberts Edwin</p>
+          </div>
+          <div class="description"></div>
+            <p style="margin-left: 3px;"><strong>Description</strong></p>
+            <p class="describe"><i style="line-height: 1rem; margin-left: 3px;">Explore our beautiful cabin nestled deep within the
+            tranquil woods for an unregretable getaway. Perfect for nature
+            enthusiasts and those looking for a peaceful retreat, our cozy cabin offers a unique blend of rustic charm and
+            modern
+            comfort.
+          
+            This three-bedroom cabin boasts a warm and inviting atmosphere, complete with a crackling fireplace and large
+            windows
+            that
+            frame picturesque views of the surrounding forest. The open-concept living area is tastefully furnished with a plush
+            sofa, antique wooden furnishings, and curated decor that adds to the cabin's charm.
+          
+            The fully-equipped kitchen provides all the essentials for preparing your favorite meals, while the dining area is a
+            perfect spot to enjoy them while basking in the natural light.</i></p>
+          <div class="amen">
+            <p><strong style="font-size: 1rem;">Amenities</strong></p>
+            <div class="img4"></div>
+            <p class="tv">4 TV's</p>
+            <div class="img5"></div>
+            <p class="wifi">Free Wifi</p>
+            <div class="img6"></div>
+            <p class="Pet">Pet</p>
+          </div>
+          <div class="reviews">
+            <p><strong style="font-size: 1rem; margin-left: 5px;">2 Reviews</strong></p>
+          </div>
+          <div class="rev-msg">
+            <p><strong>From Keith McGregor on 31th January 2017</strong></p>
+            <p class="msg"><em>Absolutely outstanding place, i have no regrets at all and highly recommendable
+              </em></p>
+            <p><strong>From Julien Bieber on 13th March 2015</strong></p>
+            <p class="msg"><em>Wow! Wow! Wow!, this is the best i have seen so far of all. such a beautiful house you've got right there.
+              </em></p>
           </div>
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="foot">
       <p>Best School</p>
     </footer>
   </body>
